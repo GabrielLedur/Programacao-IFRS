@@ -1,0 +1,18 @@
+form{
+    width:400px;
+    margin: 0 auto;
+}
+input[type='text'],input[type='password'],input[type='datetime-local'],select,button{
+    width: 100%;
+    border-color: blueviolet;
+    background-color: yellow
+}
+body{
+    background-color: chartreuse;
+}
+input:required{
+    background-color: blue;
+}
+input:optional{
+    background-color: royalblue;
+}

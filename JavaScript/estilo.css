@@ -1,0 +1,39 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color:darkorchid;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    ". formulario .";
+}
+
+form{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form > input{
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+#botoes{
+    display: flex;
+}
+#botoes > button{
+    flex: 1;
+    border-radius: 5px;
+    font-size: 1.3em;
+    margin:5px;
+}
+#resultado{
+    text-align: center;
+    font-size: 1.3em;
+    background-color: white;
+}

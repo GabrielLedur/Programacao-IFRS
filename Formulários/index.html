@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chaximi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+    <!--
+    <script src="main.js"></script>
+    -->
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <fieldset>
+            <legend>Campos construidos com um input</legend>
+            <label for='nome'>Nome:</label> <input id="nome" type='text' name='nome' placeholder="Informe seu nome completo" required>
+        <br>
+        <br>
+            <label for='senha'>Senha:</label> <input id="senha" type="password" name='senha' placeholder="Insira sua senha" required>
+        <br>
+        <br>
+            <label for='datahora'>Data e hora:</label> <input id='datahora' type="datetime-local" name='datahora'>
+        </fieldset>
+        <fieldset>
+                <legend>Campo construido com select</legend>
+                <label for="curso">Curso:</label>
+                <select name='curso' id='curso'>
+                    <option value='1'>Informática</option>
+                    <option value='2'>Química</option>
+                    <option value='3'>Meio Ambiente</option>
+                </select>
+        </fieldset>
+        <br>
+        <fieldset>
+                <legend>Checkbox e Radio</legend>
+                <label>Selecione quais são seus interesses:</label>
+                    <input type="checkbox" name="Jogos" value='1'> Jogos
+                    <input type="checkbox" name="Música" value='1'> Música
+                    <br>
+                    <label>Concorda com o contrato</label>
+                    <input type="radio" name="contrato" value='1'> Sim
+                    <input type="radio" name="contrato" value='0'> Não
+        </fieldset>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
