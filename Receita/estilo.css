@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(59, 30, 30);
+    font-size: larger;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
+    font-size: 14pt;
+}
+ul{
+    color: azure;
+    font-size: 14pt;
+}
+ol{
+    color: azure;
+    font-size: 14pt;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:magenta;
+    background-color: blue;
+}
+a:link{
+    color: rgb(36, 113, 255);
+}
+a:visited{
+    color: rgb(138, 50, 138);
+}
+.fonte{
+    color: azure;
+}
+table,th,td{
+    color: white;
+    border-color: black;
+    border-style: double;
+    border-width: 3px;
+    border-collapse: collapse;
+}
+.imagem{
+    width: 1200px;
+    margin:0 auto;
+}
+.imagem img{
+    width: 100%;
+}
