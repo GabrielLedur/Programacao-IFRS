@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mad Libs</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Juntador de palavras</h1>
+            <p>Esta aplicação serve para juntar palavras</p>
+        </header>
+        <section>
+                <div class = "parte1">
+                    <input name="verbo" type="text" placeholder="Digite um verbo">
+                    <br>
+                    <input name="adjetivo" type="text" placeholder="Digite um adjetivo">
+                    <br>
+                    <select name="frase" id="frase">
+                        <option value="1">Frase 1</option>
+                        <option value="2">Frase 2</option>
+                        <option value="3">Frase 3</option>
+                    </select>
+                </div>
+                <div class="parte2">
+                    <button class="criar frase" >Criar Frase</button>
+                    <br>
+                    <fieldset>
+                        <presposta>Frase</presposta>
+                    </fieldset>
+                </div>
+                <div class="parte3">
+                    <div>
+                        <input type="radio" name="tema" value=1 checked> Light
+                    </div>
+                    <div>
+                        <input type="radio" name="tema" value=0 > Dark
+                    </div>
+        </section>
+        <footer>
+            <h4>Desenvolvido por Gabriel Ledur</h4>
+        </footer>
+    </div>
+</body>
+</html>
