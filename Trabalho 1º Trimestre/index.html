@@ -15,9 +15,11 @@
         </header>
         <section>
                 <div class = "parte1">
-                    <input name="verbo" type="text" placeholder="Digite um verbo">
+                    <input required id="palavra1" type="text" placeholder="Digite um substantivo no plural" >
                     <br>
-                    <input name="adjetivo" type="text" placeholder="Digite um adjetivo">
+                    <input required id="palavra2" type="text" placeholder="Digite um verbo" >
+                    <br>
+                    <input required id="palavra3" type="text" placeholder="Digite um substantivo" >
                     <br>
                     <select name="frase" id="frase">
                         <option value="1">Frase 1</option>
@@ -26,10 +28,12 @@
                     </select>
                 </div>
                 <div class="parte2">
-                    <button class="criar frase" >Criar Frase</button>
+                    <button class="criar_frase" >Criar Frase</button>
+                    <br>
+                    <br>
                     <br>
                     <fieldset>
-                        <presposta>Frase</presposta>
+                        <presposta id="frase_final">Frase</presposta>
                     </fieldset>
                 </div>
                 <div class="parte3">
@@ -39,6 +43,7 @@
                     <div>
                         <input type="radio" name="tema" value=0 id=dark> Dark
                     </div>
+                </div>
         </section>
         <footer>
             <h4>Desenvolvido por Gabriel Ledur</h4>
