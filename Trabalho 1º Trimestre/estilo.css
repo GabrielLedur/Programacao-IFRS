@@ -1,60 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    color: black;
+    font-family: 'Muli', sans-serif;
+    margin: 0 auto;
 }
 
 .container{
-    width: 100wh;
-	height: 90vh;
-    color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr 6fr 1fr;
     height: 100vh;
     width: 100vw;
     grid-template-areas:
-    ". header . "
-    ". section . "
-    ". footer . "
+    ". header ."
+    ". section ."
+    ". footer ."
 }
 
 header{
@@ -62,6 +26,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 section{
@@ -98,6 +63,7 @@ section{
 input{
     margin: 4px;
     size: 200px;
+    border-radius: 7px;
 }
 
 footer{
