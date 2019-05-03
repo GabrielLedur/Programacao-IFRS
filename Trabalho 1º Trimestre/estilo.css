@@ -11,10 +11,10 @@ body, html{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
     height: 100vh;
     width: 100vw;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
     grid-template-areas:
     ". header ."
     ". section ."
@@ -45,12 +45,14 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 .parte2{
     grid-area: parte2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .parte3{
