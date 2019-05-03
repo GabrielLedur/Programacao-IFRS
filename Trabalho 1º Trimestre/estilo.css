@@ -1,0 +1,108 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.container{
+    width: 100wh;
+	height: 90vh;
+    color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+    ". header . "
+    ". section . "
+    ". footer . "
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    grid-area: section;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "parte1"
+    "parte2"
+    "parte3"
+}
+
+.parte1{
+    grid-area: parte1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parte2{
+    grid-area: parte2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parte3{
+    grid-area: parte3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input{
+    margin: 4px;
+    size: 200px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
