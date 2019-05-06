@@ -1,11 +1,11 @@
 //Mudar o tema
 var tema_claro = document.querySelector("#light");
 tema_claro.addEventListener('click', function(x){
-    document.querySelector("body").background = "linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)";
+    document.querySelector("body").style = "background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);";
 });
 var tema_escuro = document.querySelector("#dark");
 tema_escuro.addEventListener('click', function(x){
-    document.querySelector("body").background = "linear-gradient(-45deg, rgb(39, 13, 70), rgb(78, 17, 39), rgb(12, 61, 78), rgb(4, 59, 46))";
+    document.querySelector("body").style = "background: linear-gradient(-45deg, rgb(39, 13, 70), rgb(78, 17, 39), rgb(12, 61, 78), rgb(4, 59, 46));";
 });
 //Troca de placeholder
 var placeholder_frase = document.querySelector("#frase");
