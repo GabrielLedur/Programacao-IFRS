@@ -29,7 +29,7 @@ placeholder_frase.addEventListener('change', function(x){
     if(this.value==3){
         document.querySelector("#palavra1").placeholder = "Digite um Substantivo próprio";
         document.querySelector("#palavra2").placeholder = "Digite o nome de algum lugar";
-        document.querySelector("#palavra3").placeholder = "Digite um adjetivo no feminino";
+        document.querySelector("#palavra3").placeholder = "Digite um adjetivo no plural e feminino ";
         document.querySelector("#palavra1").value = null;
         document.querySelector("#palavra2").value = null;
         document.querySelector("#palavra3").value = null;
