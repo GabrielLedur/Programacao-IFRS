@@ -10,20 +10,16 @@
 <body>
     <div class="container">
         <header>
-            <h1>Mad Libs</h1>
-            <div>
-                <p>Mad libs é um jogo de substituição de palavras inventado nos anos 50.</p> 
-                <p>Após a criação de uma lista de palavras, estas são inseridas em uma frase,</p> 
-                <p>que normalmente é bem aleatória e divertida.</p>
-            </div>
+            <h1>Juntador de palavras</h1>
+            <p>Esta aplicação serve para juntar palavras</p>
         </header>
         <section>
                 <div class = "parte1">
-                    <input id="palavra1" type="text" size="40" aria-required="true" pattern="[a-z\s]+$" placeholder="Digite um substantivo no plural" >
+                    <input required id="palavra1" type="text" placeholder="Digite um substantivo no plural" >
                     <br>
-                    <input id="palavra2" type="text" size="40" required pattern="[a-z\s]+$" placeholder="Digite um verbo" >
+                    <input required id="palavra2" type="text" placeholder="Digite um verbo" >
                     <br>
-                    <input id="palavra3" type="text" size="40" required pattern="[a-z\s]+$" placeholder="Digite um Substantivo de lugar" >
+                    <input required id="palavra3" type="text" placeholder="Digite um substantivo" >
                     <br>
                     <select name="frase" id="frase">
                         <option value="1">Frase 1</option>
@@ -31,9 +27,8 @@
                         <option value="3">Frase 3</option>
                         <option value="4">Frase 4</option>
                     </select>
-                    <br>
                 </div>
-                <div class="parte2">  
+                <div class="parte2">
                     <button class="criar_frase" >Criar Frase</button>
                     <br>
                     <br>
