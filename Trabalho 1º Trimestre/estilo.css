@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
-
 body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
     font-family: 'Muli', sans-serif;
-    margin: 0 auto;
+    color: #fff;
+	
+}
+
+p{
+    margin: 4px;
+}
+
+body{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 }
 
 .container{
     display: grid;
-    height: 100vh;
-    width: 100vw;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr 6fr 1fr;
+    height: 100vh;
+    width: 100vw;
     grid-template-areas:
-    ". header ."
-    ". section ."
-    ". footer ."
+    ". header . "
+    ". form . "
+    ". footer . "
 }
 
 header{
@@ -26,13 +33,12 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
-section{
-    grid-area: section;
+form{
+    grid-area: form;
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "parte1"
@@ -45,7 +51,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .parte2{
     grid-area: parte2;
@@ -64,8 +70,7 @@ section{
 
 input{
     margin: 4px;
-    size: 200px;
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 footer{
