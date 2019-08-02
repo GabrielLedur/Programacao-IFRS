@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inserir Avaliação</title>
+</head>
+<body>
+    <form method='post' action='processa.php'>
+        Capa: <input type='text' name='capa'><br>
+        Título: <input type='text' name='titulo'><br>
+        Autor: <input type='text' name='autor'><br>
+        Gênero: <select name='genero'>
+                <option value="1">Ação</option>
+                <option value="2">Romance</option>
+                <option value="3">Biografia</option>
+                <option value="4">Ficção Científica</option>
+                </select><br>
+        <button name = 'acao' value='inserir' type='submit'>Cadastrar</button>
+    </form>
+</body>
+</html>
